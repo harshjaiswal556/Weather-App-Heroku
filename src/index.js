@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 // const partials = require("pa")
 const hbs = require("hbs");
+const port = process.env.PORT || 5500;
 const app = express();
 
 let staticPath = path.join(__dirname,"/templates");
@@ -24,6 +25,6 @@ app.get("*",(req,res)=>{
     res.render("404error");
 });
 
-app.listen(5500,()=>{
+app.listen(port,()=>{
     console.log("Website hosted successfully");
 });
