@@ -2,11 +2,6 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Piazzolla', serif;
-    color: white;
-}
-.main_body{
-    height: 100vh;
-    background-color: #323c46;
 }
 
 :root{
@@ -96,13 +91,10 @@ transition: box-shadow .15s;
     border-radius: 0.4rem;
     padding: 1rem 1.5rem;
     box-shadow: 0 8px 6px -6px #000;
-    color: var(--main-color);
 }
 .main_header_left button:hover{
-    box-shadow: 0 8px 6px -6px white;
+    box-shadow: 0 8px 6px -6px var(--main-color);
     font-size: 1.5rem;
-    background-color: var(--main-color);
-    color: white;
 }
 .text_color{
     color: var(--main-color);

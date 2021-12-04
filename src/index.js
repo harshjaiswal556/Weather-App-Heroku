@@ -21,8 +21,17 @@ app.get("/about",(req,res)=>{
 app.get("/weather",(req,res)=>{
     res.render("weather");
 });
+app.get("/indexLight",(req,res)=>{
+    res.render("indexLight");
+});
+app.get("/weatherLight",(req,res)=>{
+    res.render("weatherLight");
+});
+app.get("/aboutLight",(req,res)=>{
+    res.render("aboutLight");
+});
 app.get("*",(req,res)=>{
-    res.render("404error");
+    res.render("error404");
 });
 
 app.listen(port,()=>{
